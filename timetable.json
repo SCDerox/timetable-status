@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "Englisch": {
+      "group": "2e3",
+      "room": "C23"
+    },
+    "Sozialkunde": {
+      "group": "2g2",
+      "room": "C23"
+    },
+    "Mathe": {
+      "group": "2m4",
+      "room": "216"
+    },
+    "Physik": {
+      "room": "019"
+    },
+    "Deutsch": {
+      "group": "2d1",
+      "room": "C21"
+    },
+    "Geschichte": {
+      "group": "2g2",
+      "room": "C22"
+    },
+    "Informatik": {
+      "room": "232"
+    },
+    "Kunst": {
+      "room": "UKu"
+    },
+    "Sport": {
+      "room": "Halle"
+    },
+    "Wirtschaft und Recht": {
+      "group": "2wr2",
+      "room": "C21"
+    },
+    "Ethik": {
+      "group": "2eth1",
+      "room": "C23"
+    }
+  },
+  "1": {
+    "1": {
+      "lesson": "Mathe",
+      "room": "330"
+    },
+    "2": {
+      "lesson": "Mathe",
+      "room": "330"
+    },
+    "3": {
+      "lesson": "Deutsch"
+    },
+    "4": {
+      "lesson": "Deutsch"
+    },
+    "5": {
+      "lesson": "Englisch"
+    },
+    "8": {
+      "lesson": "Ethik"
+    },
+    "9": {
+      "lesson": "Sport"
+    },
+    "10": {
+      "lesson": "Sport"
+    }
+  },
+  "2": {
+    "1": {
+      "lesson": "Physik",
+      "room": "024"
+    },
+    "2": {
+      "lesson": "Mathe"
+    },
+    "3": {
+      "lesson": "Kunst"
+    },
+    "4": {
+      "lesson": "Kunst"
+    },
+    "5": {
+      "lesson": "Informatik"
+    },
+    "6": {
+      "lesson": "Informatik"
+    }
+  },
+  "3": {
+    "1": {
+      "lesson": "Sozialkunde"
+    },
+    "2": {
+      "lesson": "Mathe"
+    },
+    "4": {
+      "lesson": "Deutsch"
+    },
+    "6": {
+      "lesson": "Wirtschaft und Recht"
+    },
+    "7": {
+      "lesson": "Wirtschaft und Recht"
+    }
+  },
+  "4": {
+    "1": {
+      "lesson": "Englisch"
+    },
+    "2": {
+      "lesson": "Englisch"
+    },
+    "3": {
+      "lesson": "Informatik"
+    },
+    "4": {
+      "lesson": "Deutsch"
+    },
+    "5": {
+      "lesson": "Physik"
+    },
+    "6": {
+      "lesson": "Physik"
+    }
+  },
+  "5": {
+    "1": {
+      "lesson": "English"
+    },
+    "2": {
+      "lesson": "Geschichte"
+    },
+    "3": {
+      "lesson": "Geschichte"
+    },
+    "4": {
+      "lesson": "Ethik"
+    }
+  }
+}

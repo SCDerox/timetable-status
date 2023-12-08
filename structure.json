@@ -1,0 +1,82 @@
+[
+  {
+    "type": "LESSON",
+    "start": "08:15",
+    "end": "09:00"
+  },
+  {
+    "type": "BREAK",
+    "start": "09:00",
+    "end": "09:05"
+  },
+  {
+    "type": "LESSON",
+    "start": "09:05",
+    "end": "09:50"
+  },
+  {
+    "type": "BREAK",
+    "start": "09:50",
+    "end": "09:55"
+  },
+  {
+    "type": "LESSON",
+    "start": "09:55",
+    "end": "10:40"
+  },
+  {
+    "type": "BREAK",
+    "start": "10:40",
+    "end": "11:05"
+  },
+  {
+    "type": "LESSON",
+    "start": "11:05",
+    "end": "11:50"
+  },
+  {
+    "type": "BREAK",
+    "start": "11:50",
+    "end": "11:55"
+  },
+  {
+    "type": "LESSON",
+    "start": "11:55",
+    "end": "12:40"
+  },
+  {
+    "type": "BREAK",
+    "start": "12:40",
+    "end": "12:45"
+  },
+  {
+    "type": "LESSON",
+    "start": "12:45",
+    "end": "13:30"
+  },
+  {
+    "type": "BREAK",
+    "start": "13:30",
+    "end": "13:35"
+  },
+  {
+    "type": "LESSON",
+    "start": "13:35",
+    "end": "14:20"
+  },
+  {
+    "type": "LESSON",
+    "start": "14:20",
+    "end": "15:05"
+  },
+  {
+    "type": "LESSON",
+    "start": "15:05",
+    "end": "15:50"
+  },
+  {
+    "type": "LESSON",
+    "start": "15:50",
+    "end": "16:35"
+  }
+]
