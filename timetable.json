@@ -13,7 +13,8 @@
       "room": "216"
     },
     "Physik": {
-      "room": "019"
+      "room": "019",
+      "group": "2ph1"
     },
     "Deutsch": {
       "group": "2d1",
@@ -24,10 +25,12 @@
       "room": "C22"
     },
     "Informatik": {
-      "room": "232"
+      "room": "232",
+      "group": "2inf1"
     },
     "Kunst": {
-      "room": "UKu"
+      "room": "UKu",
+      "group": "2ku1"
     },
     "Sport": {
       "room": "Halle"
@@ -129,7 +132,7 @@
   },
   "5": {
     "1": {
-      "lesson": "English"
+      "lesson": "Englisch"
     },
     "2": {
       "lesson": "Geschichte"

@@ -28,6 +28,15 @@ if (!currentLessonNumber) {
 }
 
 let structureData = structure[currentStructureID];
+if (!structureData) {
+    const lessons = Object.keys(today);
+    if (lessons.length === 0) process.exit();
+    const nextLesson = structure.filter(f => f.type ==='LESSON')[lessons[0]-1];
+    const lessonData = today[lessons[0]]
+    const nextLessonMeta = timetable['_meta'][lessonData.lesson]
+    console.log(`Unterrichtsbeginn in ${displayTimeLeft((calculateConfigValue(nextLesson.start).getTime() - currentTime.getTime()) / 1000)}: ${nextLessonMeta.shortName || lessonData.lesson} (${lessonData.room || nextLessonMeta.room})`)
+    process.exit();
+}
 const endDate = calculateConfigValue(structureData.end)
 let timeTillNextStructure = (endDate.getTime() - currentTime.getTime()) / 1000;
 
@@ -60,7 +69,7 @@ if (!lessonData) {
 const metaData = timetable['_meta'][lessonData.lesson];
 
 let afterString = ''; // aka suffix
-if (timeTillNextStructure < 60*10) {
+if (timeTillNextStructure <= 60*10) {
     afterString = ', dann ';
     if (currentLessonNumber === 3) afterString = afterString + 'Pause';
     else {
@@ -82,8 +91,9 @@ function calculateConfigValue(value) {
 }
 
 function displayTimeLeft(t) {
-    if (t > 60*60) {
-        const k = (t%(60*60)) / 60
+    if (t >= 60*60) {
+        const k = (t%(60*60)) / 60;
+        if (k === 0) return `${Math.floor(t/(60*60))}h`;
         return `${Math.floor(t/(60*60))}h ${k.toFixed(0)}min`
     }
     if (t < (5*60)) {
