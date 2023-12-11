@@ -32,6 +32,7 @@ if (!structureData) {
     const lessons = Object.keys(today);
     if (lessons.length === 0) process.exit();
     const nextLesson = structure.filter(f => f.type ==='LESSON')[lessons[0]-1];
+    if (calculateConfigValue(nextLesson.start).getTime() < currentTime.getTime()) process.exit();
     const lessonData = today[lessons[0]]
     const nextLessonMeta = timetable['_meta'][lessonData.lesson]
     console.log(`Unterrichtsbeginn in ${displayTimeLeft((calculateConfigValue(nextLesson.start).getTime() - currentTime.getTime()) / 1000)}: ${nextLessonMeta.shortName || lessonData.lesson} (${lessonData.room || nextLessonMeta.room})`)
