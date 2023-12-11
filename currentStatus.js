@@ -45,16 +45,16 @@ if (structureData.type === 'BREAK') {
     if (timeTillNextStructure / 60 <= 5) {
         string = 'Fuge';
     }else string = 'Pause'
-    string = string + ' noch  ' + displayTimeLeft(timeTillNextStructure);
+    string = string + ' noch ' + displayTimeLeft(timeTillNextStructure);
     const nextLesson = today[currentLessonNumber+1];
     if (nextLesson) {
         const nextLessonMeta = timetable['_meta'][nextLesson.lesson];
         string = string + ', dann ' + nextLesson.lesson + ` (${nextLesson.room || nextLessonMeta.room})`;
         console.log(string);
         process.exit();
-    }
-
+    } else currentLessonNumber++;
 }
+
 const lessonData = today[currentLessonNumber];
 if (!lessonData) {
     const lessons = Object.keys(today).map(e => parseInt(e)).filter(f => f > currentLessonNumber);
@@ -62,7 +62,7 @@ if (!lessonData) {
     const nextLesson = structure.filter(f => f.type ==='LESSON')[lessons[0]-1];
     const lessonData = today[lessons[0]]
     const nextLessonMeta = timetable['_meta'][lessonData.lesson]
-    console.log(`Freistunde noch ${displayTimeLeft((calculateConfigValue(nextLesson.end).getTime() - currentTime.getTime()) / 1000)} bis ${nextLessonMeta.shortName || lessonData.lesson} (${lessonData.room || nextLessonMeta.room})`)
+    console.log(`Freistunde noch ${displayTimeLeft((calculateConfigValue(nextLesson.start).getTime() - currentTime.getTime()) / 1000)} bis ${nextLessonMeta.shortName || lessonData.lesson} (${lessonData.room || nextLessonMeta.room})`);
     process.exit();
 }
 
