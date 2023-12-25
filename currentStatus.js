@@ -1,6 +1,7 @@
 const fs = require('fs');
 const structure = JSON.parse(fs.readFileSync('./structure.json').toString());
 const timetable = JSON.parse(fs.readFileSync('./timetable.json').toString());
+const breaks = JSON.parse(fs.readFileSync('./breaks.json').toString());
 
 const currentTime = new Date();
 const today = timetable[currentTime.getDay()];
@@ -8,6 +9,8 @@ if (!today) {
     console.log('');
     process.exit();
 }
+
+if (breaks.includes(`${new Date().getDate()}/${new Date().getMonth() +1}`)) process.exit();
 
 let currentStructureID = null;
 let currentLessonNumber = 0;
