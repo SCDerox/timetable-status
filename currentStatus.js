@@ -102,7 +102,7 @@ function displayTimeLeft(t) {
     }
     if (t < (5*60)) {
         const k = (t%60)
-        return `${Math.floor(t/60)}:${k < 10 ? '0': ''}${Math.round(k)}min`
+        return `${Math.floor(t / 60)}:${k < 10 ? '0' : ''}${Math.floor(k)}min`;
     }
     return (Math.ceil(t / 60)).toFixed(0) + 'min'
 }
