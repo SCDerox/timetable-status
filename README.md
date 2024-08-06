@@ -14,3 +14,13 @@ relevant parts of my timetable in school.
 ## Examples
 
 ![Example](images/status1.png)
+
+![Example](images/status2.png)
+
+![Example](images/status3.png)
+
+![Example](images/status4.png)
+
+![Example](images/status5.png)
+
+![Example](images/status6.png)
